@@ -1,1 +1,1 @@
-second file
+Modified content for file2
