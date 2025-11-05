@@ -1,0 +1,3 @@
+i have learnt how to push files to a repository
+how to stage files 
+how to commit changes for specific files
