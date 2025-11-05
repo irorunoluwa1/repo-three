@@ -1,0 +1,34 @@
+git log, git show, and git diff are fundamental Git commands for examining the history and changes within a repository.
+git log
+Purpose: Primarily used to display a list of commits in the repository's history.
+Output: By default, it shows the commit hash, author, date, and commit message for each commit.
+Customization: Offers extensive options for filtering and formatting the output, such as --oneline for a concise summary, --graph for an ASCII graph of the commit history, and --author or --grep for filtering based on author or message content.
+Example:
+Code
+
+    git log --oneline --graph
+git show
+Purpose: Used to display the details of a specific Git object, most commonly a single commit.
+Output: For a commit, it shows the commit message, author, date, and the full diff (changes) introduced by that commit. It can also display the contents of other Git objects like tags or trees.
+Usage: Requires a commit hash, tag name, or branch name as an argument.
+Example:
+Code
+
+    git show <commit-hash>
+git diff
+Purpose: Used to show the differences between various states of the repository.
+Versatility: Can compare:
+The working directory and the staging area (git diff).
+The staging area and the last commit (git diff --staged or git diff --cached).
+The working directory and a specific commit (git diff <commit>).
+Two different commits (git diff <commit1> <commit2>).
+Two different branches (git diff <branch1> <branch2>).
+Output: Displays the line-by-line changes between the specified entities, indicating additions, deletions, and modifications.
+Example:
+Code
+
+    git diff HEAD~1 HEAD  # Shows changes between the last two commits
+Key Differences Summarized:
+git log focuses on the history of commits.
+git show focuses on the details of a single commit (or other Git object).
+git diff focuses on comparing the changes between two different states or objects.
